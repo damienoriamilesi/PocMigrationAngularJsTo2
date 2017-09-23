@@ -1,0 +1,39 @@
+lsof -t -i tcp:4200 | xargs kill -9
+
+      <ul class="nav navbar-nav dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <!-- <li>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"> -->
+                
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">More options</a>
+                  <ul class="dropdown-menu">
+                      <li class="dropdown-submenu">
+                          <a tabindex="-1" href="#">More options</a>
+                          <ul class="dropdown-menu">
+                            <li>fzfer</li>>
+                          </ul>
+                        </li>
+                  </ul>
+                </li>
+              <!-- </ul>
+        </li> -->
+              <!-- <li *ngFor="let menuItem of menuItems" class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  {{menuItem.label}}
+                  <b *ngIf="menuItem.menuItems" class="caret"></b>
+                </a>
+                <ul *ngIf="menuItem.menuItems" class="dropdown-menu multi-level"> 
+                  <li *ngFor="let submenuItem of menuItem.menuItems">
+                      <a routerLink="/component1" class="dropdown-toggle" data-toggle="dropdown">{{submenuItem.label}}
+                        <b *ngIf="submenuItem.menuItems" class="caret"></b>
+                      </a>
+                      <ul *ngIf="submenuItem.menuItems" class="dropdown-menu multi-level"> 
+                        <li *ngFor="let item of submenuItem.menuItems">
+                            <a routerLink="/component1" class="dropdown-toggle" data-toggle="dropdown">{{item.label}}</a>
+                        </li>                  
+                      </ul>
+                  </li>                  
+                </ul>
+          </li> -->
+        
+      </ul>

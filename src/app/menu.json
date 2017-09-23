@@ -1,0 +1,29 @@
+{
+    "menuItems":
+    [
+        {                   
+            "label":"Menu1", 
+            "menuItems":
+            [
+                {
+                    "label":"Menu1"            
+                },
+                {
+                    "label":"Menu2"            
+                }
+            ]        
+        },
+        {                   
+            "label":"Menu2", 
+            "menuItems":
+            [
+                {
+                    "label":"Menu21"            
+                },
+                {
+                    "label":"Menu22"            
+                }
+            ]        
+        }
+    ]
+}
