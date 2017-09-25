@@ -7,12 +7,18 @@ import {AppRoutingModule} from './app-routing.module';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @Input() menuItems = menu;
+
   title = 'My Angular App';
   heroes = [{Name: 'Spiderman'}];
   constructor(private routingModule: AppRoutingModule) {
   }
 
-  @Input() menuItems = menu;
+  getSubmenuClass(menuItems: any): string {
+    if (menuItems) { return 'dropdown-submenu'; }
+    return '';
+  }
+
 }
 
 const menu =

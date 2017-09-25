@@ -15,10 +15,9 @@
             <li class="dropdown" *ngFor="let menu of menuItems">
                 <a href="#" title="Stakeholder Mapping in 4 steps" class="dropdown-toggle disabled" data-toggle="dropdown">{{menu.label}}<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li *ngFor="let submenu of menu.menuItems" class="dropdown-submenu">
+                    <li *ngFor="let submenu of menu.menuItems" [ngClass]="getSubmenuClass(submenu.menuItems)">
                       <a href="/what-is-a-stakeholder.html" title="What is a Stakeholder?" class="dropdown-toggle" data-toggle="dropdown">{{submenu.label}}</a>
                       <ul *ngIf="submenu.menuItems" class="dropdown-menu" role="menu">
-                          <li *ngIf="submenu.menuItems" class="dropdown-menu">
                           <li class="dropdown-submenu">
                               <a href="#" tabindex="-1" class="dropdown-toggle" data-toggle="dropdown">test</a>
                               <ul *ngIf="submenu.menuItems" class="dropdown-menu">
@@ -31,11 +30,12 @@
                 </ul>
             </li>
 
-            <li class="dropdown">
+            <!-- <app-menu [menuItems]='menuItems'></app-menu> -->
+
+            <!-- <li class="dropdown">
               <a href="#" title="Stakeholder Mapping in 4 steps" class="dropdown-toggle disabled" data-toggle="dropdown">Stakeholder Map <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                   <li><a href="/what-is-a-stakeholder.html" title="What is a Stakeholder?">What is a Stakeholder?</a></li>
-                  <!--start submenu-->
                   <li class="dropdown-submenu">
                         <a href="#" tabindex="-1" class="dropdown-toggle" data-toggle="dropdown">Stakeholder lists</a>
                         <ul class="dropdown-menu">
@@ -55,9 +55,8 @@
                           <li><a href="/stakeholders-it-project.html" title="stakeholders IT project">IT project stakeholder list</a></li>
                         </ul>
                     </li>
-                    <!--end submenu-->
                 </ul>
-            </li>
+            </li> -->
           </ul>
     </div>
   </div>
