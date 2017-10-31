@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <p>
+            list1 works! {{editComponentVisible}}
+          </p>
+
+          <ul>
+            <li *ngFor="let menu of list" (click)="select(menu)">
+              {{menu.test}}
+            </li>
+          </ul>
+
+          <!-- <button (click)="edit()">Click me</button> -->
+
+          <scam1-edit1 *ngIf=editComponentVisible [selectedObj]="selectedObject"></scam1-edit1>
+
+    </div>
+</div>

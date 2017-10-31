@@ -1,18 +1,22 @@
 <div class="container">
       <div class="container">
-        <table>
+        <table class="table table-striped">
           <thead>
             <tr>
-              Hero
+              <th>Hero</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let hero of heroes">
               <td>
                 {{hero.Name}}
-              </td> 
+              </td>
+              <td>
+                <a href="#" [routerLink]="" class="glyphicon glyphicon-search"></a>
+              </td>
             </tr>
           </tbody>
-        </table>  
-      </div>      
+        </table>
+      </div>
 </div>

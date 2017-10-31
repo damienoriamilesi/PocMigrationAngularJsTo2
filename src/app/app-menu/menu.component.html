@@ -1,3 +1,19 @@
-<p>
-  menu works!
-</p>
+<!-- <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+<script src="../../../node_modules/jquery/dist/jquery.js" ></script> -->
+
+<li class="dropdown" *ngFor="let menu of menuItems">
+    <a href="#" title="Stakeholder Mapping in 4 steps" class="dropdown-toggle" data-toggle="dropdown">{{menu.label}}<span class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu">
+        <li *ngFor="let submenu of menu.menuItems" [ngClass]="getSubmenuClass(submenu.menuItems)">
+          <a href="/what-is-a-stakeholder.html" title="What is a Stakeholder?" class="dropdown-toggle" data-toggle="dropdown">{{submenu.label}}</a>
+          <app-menu [menuItems]=submenu.menuItems></app-menu>
+        </li>
+    </ul>
+</li>
+
+
+<!-- <button type="button" class="btn btn-primary btn-success">
+  Test
+</button> -->
+

@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Component1Component implements OnInit {
 
   constructor() { }
-  
-  heroes = [{Name:'Spiderman',Id:1},{Name:'Batman',Id:2}];
+  heroes = [{Name: 'Spiderman', Id: 1}, { Name: 'Batman', Id: 2}];
 
   ngOnInit() {
   }
