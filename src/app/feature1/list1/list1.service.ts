@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
+import { Subject } from 'rxjs/Subject';
 
 
 @Injectable()
@@ -21,4 +22,29 @@ export class List1Service {
           return Observable.throw(error.message || error);
       });
   }
+
+  get(id: number): Observable<Object> {
+      return this.http
+        .get(``)
+        .map((r: Response) => r.json().data as Object)
+        .catch((error: any) => {
+        console.error('An friendly error occurred', error);
+        return Observable.throw(error.message || error);
+        });
+  }
+
+  getSubject(id: number): Observable<Object> {
+      return this.http
+        .get(``)
+        .map((r: Response) => r.json().data as Object)
+        .catch((error: any) => {
+        console.error('An friendly error occurred', error);
+        return Observable.throw(error.message || error);
+        });
+  }
+}
+
+export class Object {
+id: number;
+label: string;
 }

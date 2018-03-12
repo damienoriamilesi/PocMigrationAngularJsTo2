@@ -31,7 +31,6 @@ export class List1Component implements OnInit {
     this.list.push({test: 'test4', id: 4});
   }
 
-
   select(obj: Test) {
     this.editComponentVisible = true;
     this.selectedObject = obj;
